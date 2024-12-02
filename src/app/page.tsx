@@ -1,4 +1,5 @@
 import hero from "@/app/assets/landingHero2.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,38 +23,30 @@ export default function Home() {
             baked pastries crafted in-house.
           </p>
           <div className={"flex flex-row justify-evenly mt-[32px] font-mono"}>
-            <a
+            <Link
               className={
                 "text-xl relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
               }
               href={"/menu"}
             >
               Menu
-            </a>
-            <a
+            </Link>
+            <Link
               className={
                 "text-xl relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
               }
-              href={"#"}
+              href={"/location"}
             >
-              Visit
-            </a>
-            <a
-              className={
-                "text-xl relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-              }
-              href={"#"}
-            >
-              Contact
-            </a>
-            <a
+              Location
+            </Link>
+            <Link
               className={
                 "text-xl relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
               }
               href={"#"}
             >
               About us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
